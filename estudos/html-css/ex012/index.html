@@ -9,5 +9,11 @@
     <body>
         <h1>Inserindo vídeos hospedados localmente.</h1>
         <p>Este vídeo está hospedado no próprio servidor.</p>
+        <!-- <video src="midia/video.m4v" width="500px" controls></video> - (Forma mais limitada) -->
+        <video width="500" controls> <!--poster cria uma thumbnail-->
+            <source src="midia/video.mp4" type="video/mp4">
+            <source src="midia/video.m4v" type="video/mp4v">
+            <p>Vídeo não suportado!</p>
+        </video>
     </body>
     </html>
