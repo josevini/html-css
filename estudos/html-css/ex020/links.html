@@ -24,13 +24,25 @@
             color: black;
             text-decoration: underline;
         }
+
+        a:active {
+            color: yellow;
+        }
+
+        .especial::before {
+            content: '→';
+        }
+
+        .especial::after {
+            content: '←';
+        }
     </style>
 </head>
 <body>
     <h1>Personalizando Links</h1>
     <ul>
         <li><a href="https://www.github.com/josevini/html-css">Repositório GitHub</a></li>
-        <li><a href="https://www.youtube.com">Canal do YouTube</a></li>
+        <li><a href="https://www.youtube.com" class="especial">Canal do YouTube</a></li>
         <li><a href="https://www.cursoemvideo.com">Site do CursoEmVideo</a></li>
     </ul>
 </body>
