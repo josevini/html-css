@@ -6,8 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atributos Globais</title>
     <style>
+        .principal {
+            font-size: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .atributo {
+            font-size: 1.3em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+        }
+
+        .experimental::after {
+            content: " - API Experimental";
+            color: #b32c2c;
+            font-size: 0.7em;
+        }
+
         .paragrafo {
             text-indent: 15px;
+            font-size: 1em;
         }
 
         .esfera {
@@ -51,7 +70,7 @@
         right to left.
     </p>
 
-    <h2 class="atributo">Draggable - API Experimental</h2>
+    <h2 class="atributo experimental">Draggable</h2>
     <p class="paragrafo">Torna um elemento arrastável e permite os valores true, false e auto.</p>
     <div class="esfera" draggable="true"></div>
 </body>
