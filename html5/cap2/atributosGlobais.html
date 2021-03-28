@@ -9,6 +9,10 @@
         .paragrafo {
             text-indent: 15px;
         }
+
+        .principal {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -16,7 +20,7 @@
         Atributos globais são aqueles que podem ser usados em qualquer tag da HTML.
     -->
 
-    <h1>Atributos Globais</h1>
+    <h1 class="principal">Atributos Globais</h1>
     
     <h2>Accesskey</h2>
     <p class="paragrafo">Dá foco para um elemento quando pressionadas teclas de atalho. Para o Chrome, as teclas de atalho são alt + o valor do atributo.</p>
@@ -28,6 +32,12 @@
 
     <h2>Class</h2>
     <p class="paragrafo">Class é um atributo que permite agrupar vários elementos afim de personalizá-los com CSS.</p>
+
+    <h2>Contenteditable</h2>
+    <p class="paragrafo">Este atributo permite valores true e false e é usado para tornar um conteúdo editável.</p>
+    <div contenteditable="true">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    </div>
 
 </body>
 </html>
